@@ -16,6 +16,8 @@ def z_normalization(img, num_channels):
     return img
 
 def sample_z_norm(data, mean=0.174634420286961, sd=0.11619528340846214):
+    """sample_z_norm
+    """
     data -= mean
     data /= sd
     return data
